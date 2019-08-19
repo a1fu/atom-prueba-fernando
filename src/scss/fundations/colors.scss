@@ -1,0 +1,21 @@
+@import "../tokens/colors.scss";
+
+@mixin text($color){
+  color: $color;
+}
+
+@mixin background($color){
+  background-color: $color;
+}
+
+//text brand colors
+.text-color-1{ @include text($color-1) }
+.text-color-2{ @include text($color-2) }
+.text-color-3{ @include text($color-3) }
+.text-color-4{ @include text($color-4) }
+
+//background brand colors
+.bg-color-1{ @include background($color-1) }
+.bg-color-2{ @include background($color-2) }
+.bg-color-3{ @include background($color-3) }
+.bg-color-4{ @include background($color-4) }

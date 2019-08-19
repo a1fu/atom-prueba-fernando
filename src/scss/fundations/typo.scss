@@ -1,0 +1,67 @@
+@import "../tokens/typo.scss";
+@import "../tokens/colors.scss";
+@import "../tokens/spacing.scss";
+
+@mixin weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin italic($italic) {
+    font-style: $italic;
+}
+
+@mixin transform($transform) {
+    text-transform: $transform;
+}
+
+@mixin align($align) {
+    text-align: $align;
+}
+
+@mixin decoration($decoration) {
+    text-decoration: $decoration;
+}
+
+body, html{
+  font-family: $typo-font-1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-weight: $typo-light;
+}
+
+h1{
+  font-size:$typo-h1;
+  font-weight: $typo-bold;
+}
+h2{ 
+  font-size:$typo-h2;
+  font-weight: $typo-bold;
+}
+h3{
+  font-size:$typo-h3;
+  font-weight: $typo-bold;
+}
+h4{
+  font-size:$typo-h4;
+  font-weight: $typo-light;
+}
+h5{ 
+  font-size:$typo-h5;
+  font-weight: $typo-bold;
+}
+h6{ font-size:$typo-h6; }
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: $spacing * 2;
+}
+
+p,a{
+  font-size: $typo-p;
+  line-height: 25px;
+  margin-bottom: $spacing;
+}
+
+hr{
+  opacity: .2;
+}
